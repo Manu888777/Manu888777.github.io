@@ -1,69 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Mi Primera Página Web</title>
-	<style>
-        /* Estilos básicos */
-        body {
-            background-color: #ffffff; /* Color de fondo */
-            font-family: Arial, sans-serif; /* Tipografía */
-            margin: 50px; /* Margen */
-            padding: 10px; /* Relleno */
-	<div style="position: relative; width: 100%; height: 0; padding-top: 75.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-   <div style="position: relative; width: 100%; height: 0; padding-top: 75.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-  <div style="position: relative; width: 100%; height: 0; padding-top: 75.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-   
-        
-        h1 {
-            color: brown; /* Color del texto */
-            font-size: 24px; /* Tamaño de fuente */
-            text-align: center; /* Alineación del texto */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos para el menú de navegación */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #C27861;
+            text-align: center;
         }
-        
-        p {
-            font-size: 16px; /* Tamaño de fuente */
-            margin-bottom: 10px; /* Espacio entre párrafos */
-        }
-        a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: red; /* Color del enlace */
-}
 
+        .menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #C2ADA7;
+            border-radius: 5px;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+        }
+
+        /* Estilos para las secciones */
+        .seccion {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contenido img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
-	<header>
-    	<h1>Manuel Rodriguez Martinez, esta es mi pagina web</h1>
-	</header>
-	<nav>
-    	<ul>
-        	<li><a href="#inicio">Inicio</a></li>
-        	<li><a href="#acerca">Acerca de</a></li>
-        	<li><a href="#contacto">Contacto</a></li>
-			<a href='https://www.canva.com/design/DAGUbdV-PeY/7BChSyfkbnTofcB9iqv0_Q/view'>Mapa Mental</a>
-    	</ul>1-Ser un biker profesional
-    	<p>2-Me gusta escuchas musica y sin eso mi vida no seria igual que ahora
-        <p>3-Soy masomenos bueno para las matematicas
-	</nav>
-	<section id="inicio">
-    	<h2>Inicio</h2>
-    	<p>Soy Manuel Rodriguez Martinez, tengo 18 años y estudio actualmente en la escuela preparatoria CEB 5/4 "profesor rafael ramirez", me gusta escuchar musica de lil peep y muchos mas artistas y generos.</p>
-   	<img src="https://i.pinimg.com/474x/87/09/23/870923398e1597f0701584c55ace5b5c.jpg" alt="Descripción de la imagen">
-   	<p>
-	<alt>En esta imagen esta chilly willy haciendola de soldao
-	</section>
-	<footer>
-    	<p>Derechos reservados 2025.</p>
-	</footer>
+
+    <!-- Menú de navegación -->
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Imagen</a></li>
+        <li><a href="#servicios">Video</a></li>
+         <li><a href="#museo virtual">Museo virtual</a></li>
+        
+    </ul>
+
+    <!-- Sección principal -->
+    <section id="inicio" class="seccion">
+        <h1>Bienvenidos a Mi Página Web</h1>
+        <h2>Una pequeña introducción sobre el sitio</h2>
+        <p>Este es un proyecto web donde combinamos HTML y CSS para crear una página funcional y visualmente atractiva.</p>
+    </section>
+
+    <!-- Sección de contenido multimedia -->
+    <section id="acerca" class="seccion">
+        <h2>Imagen Representativa</h2>
+        <div class="contenido">
+            <img src="https://paginas.com.mx/wp-content/uploads/2021/03/Elementos-basicos-de-un-sitio-Web.png" alt="Imagen representativa" title="Imagen de ejemplo">
+        </div>
+        <h2>Video Informativo</h2>
+        <div class="contenido">
+          
+<iframe width="640" height="360" src="https://youtu.be/EvKm8yhM7V8?si=l-b5v-_c_u0KQlxX" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+    </section>
+
+    <!-- Sección de tabla -->
+    <section id="servicios" class="seccion">
+        <h2>Servicios que Ofrecemos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Diseño Web</td>
+                    <td>Creación y diseño de sitios web personalizados</td>
+                   
+                </tr>
+                <tr>
+                    <td>SEO</td>
+                    <td>Optimización de motores de búsqueda para mejorar la visibilidad</td>
+                    
+                </tr>
+                <tr>
+                    <td>Consultoría</td>
+                    <td>Asesoramiento en estrategias digitales</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+   
+
 </body>
 </html>
