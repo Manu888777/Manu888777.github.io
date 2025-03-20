@@ -1,42 +1,50 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi Presentación</title>
-  <style>
-	body {
-  	background-color: #f4f4f4;
-  	font-family: Arial, sans-serif;
-  	margin: 90;
-	padding: 20;
+/* Estilos generales */
+body {
+  background-color: #f4f4f4; /* Color de fondo suave */
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centra el contenido verticalmente */
+  text-align: center;
+}
 
-	}
-	
+/* Título principal */
+h1 {
+  color: #007BFF; /* Color azul */
+  font-size: 3em; /* Tamaño grande para el título */
+  margin-bottom: 0.5em; /* Espacio debajo del título */
+}
 
-	h1 {
-  	color: #cd0000;
-  	font-size: 2em;
-  	text-align: center;
-	}
+/* Subtítulo */
+h2 {
+  color: #ff5733; /* Color anaranjado */
+  font-size: 1.8em; /* Tamaño mediano */
+  margin-bottom: 1em; /* Espacio debajo del subtítulo */
+}
 
-	h2 {
-  	color: #58cdff;
-  	font-size: 1.5em;
-  	text-align: center;
-	}
+/* Párrafo */
+p {
+  font-size: 1.2em; /* Tamaño de fuente más grande para mejorar la legibilidad */
+  color: rgb(50, 50, 50); /* Color gris oscuro */
+  line-height: 1.5; /* Altura de línea para mejor lectura */
+  max-width: 800px; /* Limitar el ancho para que el texto no se expanda demasiado */
+  margin-bottom: 2em; /* Espacio al final del párrafo */
+}
 
-	p {
-  	font-size: 16px;
-  	color: rgb(50, 50, 50);
-  	text-align: justify;
-	}
-  </style>
-</head>
-<body>
-  <h1>Manuel Rodriguez Martinez</h1>
-  <h2>Estudiante</h2>
-  <p>Soy un estudiante actualmente de preparatoria.Me apasiona aprender sobre cualquier tema en general simpre y cuando sea de mi agrado y siempre estoy buscando nuevas formas de mejorar mis habilidades. Me considero una persona responsable, organizada, y me encanta escuahr musica.</p>
-</body>
-</html>
+/* Estilos de un botón opcional */
+.boton {
+  background-color: #008cba; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  padding: 10px 20px;
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.1em; /* Tamaño de fuente del botón */
+}
 
-
+.boton:hover {
+  background-color: #005f73; /* Cambio de color al pasar el mouse */
+}
