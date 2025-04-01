@@ -1,82 +1,49 @@
 body {
-    background-color: #f4f4f4; 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+  background-color: #f4f4f4; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  text-align: center;
 }
+
 
 h1 {
-    color: #007BFF;
-    font-size: 3em;
-    margin-bottom: 0.5em;
+  color: #007BFF; 
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
+
 
 h2 {
-    color: #ff5733;
-    font-size: 1.8em;
-    margin-bottom: 1em;
+  color: #ff5733;
+  font-size: 1.8em;
+  margin-bottom: 1em;
 }
+
 
 p {
-    font-size: 1.2em;
-    color: rgb(50, 50, 50);
-    line-height: 1.5;
-    max-width: 800px;
-    margin-bottom: 2em;
+  font-size: 1.2em; 
+  color: rgb(50, 50, 50);
+  line-height: 1.5;
+  max-width: 800px; 
+  margin-bottom: 2em;
 }
 
+
 .boton {
-    background-color: #008cba;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none; 
+  border-radius: 5px;
+  font-size: 1.1em;
 }
 
 .boton:hover {
-    background-color: #005f73;
-}
-
-/* Estilos para el perfil */
-.perfil {
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #ddd;
-    text-align: center;
-    position: relative;
-}
-
-.perfil img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Estilos para el menú fijo */
-.menu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.menu a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+  background-color: #005f73;
 }
