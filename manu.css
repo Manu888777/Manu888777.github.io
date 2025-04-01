@@ -48,3 +48,58 @@ p {
 .boton:hover {
   background-color: #005f73;
 }
+{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Estilo para el perfil */
+    .perfil {
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #ddd;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Estilo para la imagen del perfil */
+    .perfil img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Estilo para el menú fijo */
+    .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Estilo para los enlaces en el menú */
+    .menu a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    /* Estilo para los enlaces al pasar el ratón */
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
