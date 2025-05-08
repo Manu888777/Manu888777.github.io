@@ -60,7 +60,6 @@
       padding: 10px 0;
       border: none;
       border-radius: 6px;
-      background-color: #3498db;
       color: white;
       font-size: 16px;
       cursor: pointer;
@@ -68,16 +67,28 @@
       margin: 0 5px;
     }
 
-    button:hover {
-      background-color: #2980b9;
+    button[type="submit"] {
+      background-color: #2ecc71; /* Verde esmeralda */
     }
 
-    button:last-child {
-      background-color: #95a5a6;
+    button[type="submit"]:hover {
+      background-color: #27ae60; /* Verde más oscuro */
     }
 
-    button:last-child:hover {
-      background-color: #7f8c8d;
+    button[type="reset"] {
+      background-color: #e67e22; /* Naranja suave */
+    }
+
+    button[type="reset"]:hover {
+      background-color: #d35400; /* Naranja más oscuro */
+    }
+
+    button[type="button"] {
+      background-color: #7f8c8d; /* Gris oscuro */
+    }
+
+    button[type="button"]:hover {
+      background-color: #636e72; /* Gris más oscuro */
     }
   </style>
 </head>
