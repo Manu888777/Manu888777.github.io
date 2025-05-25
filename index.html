@@ -171,60 +171,83 @@
         <img src="inicio.jpg" alt="https://www.xplora.eu/wp-content/uploads/diseno-paginas-web.png" />
       </section>
  <div class="card">
-      <section id="perfil" class="tab hidden">
-        <h2>Perfiles</h2>
-        <img src="avatar.jpg" alt="Avatar" class="avatar" />
-        <p><strong>Nombre:</strong> Manuel Rodriguez Martinez</p>
-        <p><strong>Carrera:</strong> Ninguna :C</p>
-        <p><strong>Intereses:</strong> Soy un estudiante actualmente de preparatoria. Me apasiona aprender sobre cualquier tema en general siempre y cuando sea de mi agrado y siempre estoy buscando nuevas formas de mejorar mis habilidades. Me considero una persona responsable, organizada, y me encanta escuchar música.</p>
-     
+     <section id="perfil" class="tab hidden">
+  <h2>Perfiles</h2>
+
+  <!-- Perfil 1 -->
+  <div class="card">
+    <img src="avatar.jpg" alt="Avatar de Manuel" class="avatar" />
+    <p><strong>Nombre:</strong> Manuel Rodríguez Martínez</p>
+    <p><strong>Carrera:</strong> Ninguna :C</p>
+    <p><strong>Intereses:</strong> Soy un estudiante actualmente de preparatoria. Me apasiona aprender sobre cualquier tema en general siempre y cuando sea de mi agrado y siempre estoy buscando nuevas formas de mejorar mis habilidades. Me considero una persona responsable, organizada, y me encanta escuchar música.</p>
+  </div>
+
+  <!-- Perfil 2 -->
+  <div class="card">
     <img src="avatar2.jpg" alt="Avatar de Alan" class="avatar" />
     <p><strong>Nombre:</strong> Alan de Jesús Fernández Monroy</p>
     <p><strong>Carrera:</strong> Ninguna :C</p>
     <p><strong>Intereses:</strong> Me gusta la tecnología, los videojuegos y experimentar con diseño gráfico. Siempre estoy aprendiendo algo nuevo.</p>
-   <div>
-</section>
-      </section>
-
-      <section id="actividades" class="tab hidden">
-        <h2>Actividades PEC</h2>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Actividad 1</h3>
-            <p>Diseño de Base de Datos</p>
-          </div>
-          <div class="card">
-            <h3>Actividad 2</h3>
-            <p>Proyecto Web con HTML, CSS y JS</p>
-          </div>
-          <div class="card">
-            <h3>Actividad 3</h3>
-            <p>Simulación de procesos</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="museo" class="tab hidden">
-        <h2>Museo Virtual</h2>
-        <div class="gallery">
-          <img src="obra1.jpg" alt="Obra 1" />
-          <img src="obra2.jpg" alt="Obra 2" />
-          <img src="obra3.jpg" alt="Obra 3" />
-        </div>
-      </section>
-
-      <section id="video" class="tab hidden">
-        <h2>Proyecto Diseño Digital</h2>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <p>Este video muestra el proyecto final realizado en la materia de Diseño Digital.</p>
-      </section>
-    </main>
   </div>
+</section>
 
-  <script>
-    function login() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      const
+<section id="actividades" class="tab hidden">
+  <h2>Actividades PEC</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Actividad 1</h3>
+      <p>Diseño de Base de Datos</p>
+    </div>
+    <div class="card">
+      <h3>Actividad 2</h3>
+      <p>Proyecto Web con HTML, CSS y JS</p>
+    </div>
+    <div class="card">
+      <h3>Actividad 3</h3>
+      <p>Simulación de procesos</p>
+    </div>
+  </div>
+</section>
+
+<section id="museo" class="tab hidden">
+  <h2>Museo Virtual</h2>
+  <div class="gallery">
+    <img src="obra1.jpg" alt="Obra 1" />
+    <img src="obra2.jpg" alt="Obra 2" />
+    <img src="obra3.jpg" alt="Obra 3" />
+  </div>
+</section>
+
+<section id="video" class="tab hidden">
+  <h2>Proyecto Diseño Digital</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p>Este video muestra el proyecto final realizado en la materia de Diseño Digital.</p>
+</section>
+</main>
+</div>
+
+<script>
+  function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const errorMsg = document.getElementById("error-msg");
+
+    if (username === "alumno" && password === "1234") {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+      showTab("inicio");
+    } else {
+      errorMsg.textContent = "Usuario o contraseña incorrectos.";
+    }
+  }
+
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll(".tab");
+    tabs.forEach(tab => tab.classList.add("hidden"));
+    document.getElementById(tabId).classList.remove("hidden");
+  }
+</script>
+</body>
+</html>
